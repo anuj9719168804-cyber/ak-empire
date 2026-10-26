@@ -123,7 +123,7 @@ def _req(name: str, default: str = "") -> str:
 # ---------------------------------------------------------------- config ----
 API_ID = int(_req("API_ID", "33029767"))
 API_HASH = _req("API_HASH", "5d897bed11bc8b062a12f6c1c3c5360a")
-BOT_TOKEN = _req("BOT_TOKEN", "8890250304:AAGB2qLp6TrnZ-VtRZxdWfO6YkMtijK1c6A")
+BOT_TOKEN = _req("BOT_TOKEN", "8890250304:AAFCjvAOVxdJerTKar8PWVTY0fzNnhsaJP4")
 OWNER_ID = int(os.getenv("OWNER_ID", "8980576385") or 0)
 ADMINS = {OWNER_ID, *(int(x) for x in re.findall(r"\d+", os.getenv("ADMINS", "8980576385")))} - {0}
 LOG_CHANNEL = (os.getenv("LOG_CHANNEL", "-1004401290975") or "").strip()
@@ -275,8 +275,8 @@ def SC(text):
 
 POWERED_BY = os.getenv("POWERED_BY", "🔥 𝘼𝙆 𝙀𝙈𝙋𝙄𝙍𝙀 🔥")
 POWERED_BY_URL = os.getenv("POWERED_BY_URL", "https://t.me/anujedits97")
-START_PHOTO_URL = os.getenv("START_PHOTO_URL", "").strip()  # optional: direct image URL
-START_PHOTO_PATH = os.getenv("START_PHOTO_PATH", "start_photo.jpg").strip()  # local file, bundled with the bot
+START_PHOTO_URL = os.getenv("START_PHOTO_URL", "https://t.me/c/4401290975/11156").strip()  # optional: direct image URL
+START_PHOTO_PATH = os.getenv("START_PHOTO_PATH", "https://t.me/c/4401290975/11156").strip()  # local file, bundled with the bot
 START_PHOTO_PATH = START_PHOTO_PATH if os.path.isfile(START_PHOTO_PATH) else ""
 
 EXAMPLE_LINKS = (
