@@ -1,5 +1,5 @@
 kurigram>=2.2.26
-tgcrypto
+tgcrypto==1.2.5
 aiohttp
 python-dotenv
 pywidevine
