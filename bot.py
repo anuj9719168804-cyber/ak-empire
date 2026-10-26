@@ -92,11 +92,11 @@ def _req(name: str, default: str = "") -> str:
 # ---------------------------------------------------------------- config ----
 API_ID = int(_req("API_ID", "33029767"))
 API_HASH = _req("API_HASH", "5d897bed11bc8b062a12f6c1c3c5360a")
-BOT_TOKEN = _req("BOT_TOKEN", "8651679866:AAH3ROfJyt0-SzN5Xpr9zf-n2slizqeP_Bs")
-OWNER_ID = int(os.getenv("OWNER_ID", "8729304171") or 0)
+BOT_TOKEN = _req("BOT_TOKEN", "8890250304:AAGB2qLp6TrnZ-VtRZxdWfO6YkMtijK1c6A")
+OWNER_ID = int(os.getenv("OWNER_ID", "8980576385") or 0)
 ADMINS = {OWNER_ID, *(int(x) for x in re.findall(r"\d+", os.getenv("ADMINS", "8931907813")))} - {0}
 LOG_CHANNEL = (os.getenv("LOG_CHANNEL", "-1004401290975") or "").strip()
-FORCE_SUB = [x.strip() for x in os.getenv("FORCE_SUB", "").split(",") if x.strip()]
+FORCE_SUB = [x.strip() for x in os.getenv("FORCE_SUB", "-1004362482295").split(",") if x.strip()]
 
 DOWNLOAD_DIR = os.getenv("DOWNLOAD_DIR", "downloads")
 MAX_FILE_BYTES = int(os.getenv("MAX_FILE_SIZE_MB", "2000")) * 1024 * 1024
