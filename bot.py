@@ -173,9 +173,9 @@ def SC(text):
     return "".join(out)
 
 
-POWERED_BY = os.getenv("POWERED_BY", "Anuj Kumar")
+POWERED_BY = os.getenv("POWERED_BY", "🔥 𝘼𝙆 𝙀𝙈𝙋𝙄𝙍𝙀 🔥")
 POWERED_BY_URL = os.getenv("POWERED_BY_URL", "https://t.me/anujedits97")
-START_PHOTO_URL = os.getenv("START_PHOTO_URL", "").strip()
+START_PHOTO_URL = os.getenv("START_PHOTO_URL", "https://t.me/c/4401290975/11156").strip()
 
 EXAMPLE_LINKS = (
     ("📺 Episode", "https://www.sonyliv.com/shows/taarak-mehta-ka-ooltah-chashmah-1700000084/"
